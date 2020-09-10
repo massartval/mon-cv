@@ -26,16 +26,15 @@ ul {
 body {
     display: grid;
     grid-auto-columns: auto;
-    grid-template-rows: 1fr 0.5fr 4fr 0.5fr 0.5fr 4fr;
+    grid-template-rows: 1fr, repeat(2, 0.5fr 4fr);
     grid-template-areas: 
-    "header     header      header      nav         "
-    "edu-title  edu-title   exp-title   exp-title   "
-    "edu-prime  edu-details exp-prime   exp-details "
-    "ass-title  ass-title   ass-title   int-title   "
-    "lang-title web-title   trans-title      .      "
-    "languages  web         transversal interests   ";
+    "header     header      header      nav"
+    "edu-title  edu-title   exp-title   exp-title"
+    "edu-prime  edu-details exp-prime   exp-details"
+    "ass-title  ass-title   ass-title   int-title"
+    "languages  web         transversal interests";
     max-height: 100vh;
-/*  row-gap: 1em; */
+    row-gap: 1em;
 }
 /**/
 header {
@@ -94,35 +93,13 @@ html {
     font-family: 'philosopher', sans-serif;
 }
 
-header, nav, div, h1, h2, h3 {
-    padding: 0.5rem;
-}
-/*
-.prime{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+header, nav, div {
+    padding: 1em;
 }
 
-.details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-*/
+.prime{}
 
-- Aligner les .prime et .details sur le bord gauche de leur conteneur
-- Aligner les .prime et .details sur le bord supérieur de leur conteneur
-- Aligner les deuxièmes listes dans #edu-prime, #edu-details et #exp-details sur le bord droit de leur conteneur
-.details {
-}
-
-#edu-prime, #edu-details, #exp-prime, #exp-details 
-
-
-#languages, #web, #transversal {
-    flex-direction: column;
-}
+.details {}
 
 #education, #experience {}
 
