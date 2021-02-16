@@ -1,101 +1,106 @@
 /* --- Global --- */
 
 :root {
-    box-sizing: border-box;
-    font-size: 14px; /* 1em = 14px */
-    --main-radius: 0.5em;
-    --main-padding: 0.5em;
+  box-sizing: border-box;
+  font-size: 14px; /* 1em = 14px */
+  --main-radius: 0.5em;
+  --main-padding: 0.5em;
 }
 
-/* --- Normalize --- */ 
+/* --- Normalize --- */
 
 a {
-    text-decoration: none;
-    font-size: 1.5em;
-    font-weight: bolder;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bolder;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0; 
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* --- Grid layout --- */ 
+/* --- Grid layout --- */
 
 body {
-    display: grid;
-    grid-auto-columns: auto;
-    grid-template-rows: 1fr 0.5fr 4fr 0.5fr 0.5fr 4fr;
-    grid-template-areas: 
+  display: grid;
+  grid-auto-columns: auto;
+  grid-template-rows: 1fr 0.5fr 4fr 0.5fr 0.5fr 4fr;
+  grid-template-areas:
     "header     header      header      nav         "
     "edu-title  edu-title   exp-title   exp-title   "
     "edu-prime  edu-details exp-prime   exp-details "
     "ass-title  ass-title   ass-title   int-title   "
     "lang-title web-title   trans-title      .      "
     "languages  web         transversal interests   ";
-    max-height: 100vh;
-/*  row-gap: 1em; */
+  max-height: 100vh;
+  /*  row-gap: 1em; */
 }
 /**/
 header {
-    background: #a7ffeb;
-    grid-area: header;
+  background: #a7ffeb;
+  grid-area: header;
 }
 nav {
-/*  background: #004d40; */
-    grid-area: nav;
+  /*  background: #004d40; */
+  grid-area: nav;
 }
 /**/
 #edu-title {
-    grid-area: edu-title;
+  grid-area: edu-title;
 }
 #edu-prime {
-    grid-area: edu-prime;
+  grid-area: edu-prime;
 }
 #edu-details {
-    grid-area: edu-details;
+  grid-area: edu-details;
 }
 /**/
 #exp-title {
-    grid-area: exp-title;
+  grid-area: exp-title;
 }
 #exp-prime {
-    grid-area: exp-prime;
+  grid-area: exp-prime;
 }
 #exp-details {
-    grid-area: exp-details;
+  grid-area: exp-details;
 }
 /**/
 #ass-title {
-    grid-area: ass-title;
+  grid-area: ass-title;
 }
 #languages {
-    grid-area: languages;
+  grid-area: languages;
 }
 #web {
-    grid-area: web;
+  grid-area: web;
 }
 #transversal {
-    grid-area: transversal;
+  grid-area: transversal;
 }
 /**/
 #int-title {
-    grid-area: int-title;
+  grid-area: int-title;
 }
 #interests {
-    grid-area: interests;
+  grid-area: interests;
 }
 /**/
 
 /* --- Styling --- */
 
 html {
-    font-family: 'philosopher', sans-serif;
+  font-family: "philosopher", sans-serif;
 }
 
-header, nav, div, h1, h2, h3 {
-    padding: 0.5rem;
+header,
+nav,
+div,
+h1,
+h2,
+h3 {
+  padding: 0.5rem;
 }
 /*
 .prime{
@@ -110,22 +115,25 @@ header, nav, div, h1, h2, h3 {
     justify-content: space-around;
 }
 */
-
+/*
 - Aligner les .prime et .details sur le bord gauche de leur conteneur
 - Aligner les .prime et .details sur le bord supérieur de leur conteneur
 - Aligner les deuxièmes listes dans #edu-prime, #edu-details et #exp-details sur le bord droit de leur conteneur
 .details {
 }
-
-#edu-prime, #edu-details, #exp-prime, #exp-details 
-
-
-#languages, #web, #transversal {
-    flex-direction: column;
+*/
+#edu-prime,
+#edu-details,
+#exp-prime,
+#exp-details #languages,
+#web,
+#transversal {
+  flex-direction: column;
 }
-
+/*
 #education, #experience {}
 
 #assets {}
 
 #interests {}
+*/

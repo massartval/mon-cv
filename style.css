@@ -1,0 +1,23 @@
+:root {
+  --primary-text-color: #000000;
+  --secondary-text-color: #808080;
+  --tertiary-text-color: #ffffff;
+  --primary-bg-color: #00aaaa;
+}
+
+header {
+  background: var(--primary-bg-color);
+  color: var(--tertiary-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--primary-bg-color);
+  text-decoration: none; /* no underline */
+}
+a:hover {
+  color: var(--primary-text-color);
+}
