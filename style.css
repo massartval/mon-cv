@@ -3,12 +3,10 @@
   --secondary-text-color: #808080;
   --tertiary-text-color: #ffffff;
   --primary-bg-color: #00aaaa;
+  font-size: 14px;
 }
 
-header {
-  background: var(--primary-bg-color);
-  color: var(--tertiary-text-color);
-}
+/* --------------------- */
 
 ul {
   list-style: none;
@@ -20,4 +18,66 @@ a {
 }
 a:hover {
   color: var(--primary-text-color);
+}
+
+header {
+  background: var(--primary-bg-color);
+  color: var(--tertiary-text-color);
+}
+
+table {
+  background-color: #dddddd;
+}
+
+#skills-tables {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+#experience,
+#education {
+  width: 80%;
+  margin: auto;
+  padding-left: 2rem;
+}
+/*
+#experience table,
+#education table {
+  border-top: 1px solid black;
+}
+*/
+#experience th,
+#experience td,
+#education th,
+#education td {
+  display: inline-block;
+  width: 33%;
+  margin-top: 0.5rem;
+}
+/*
+#experience td:nth-child(2),
+#education td:nth-child(2) {
+  text-align: center;
+}
+
+#experience td:nth-child(3),
+#education td:nth-child(3) {
+  text-align: right;
+}
+*/
+#experience td:last-child,
+#education td:last-child {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+#experience thead,
+#education thead,
+#interests thead {
+  display: none;
 }

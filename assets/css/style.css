@@ -1,0 +1,149 @@
+/* ----- Global ----- */
+main {
+  width: 90%;
+  margin: auto;
+  color: #424242;
+  font-size: 14px;
+  text-align: justify;
+  font-family: "Roboto";
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #00aaaa;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #424242;
+}
+
+header {
+  background: #00aaaa;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 2px 4px 2px #f2f2f2;
+          box-shadow: 0px 2px 4px 2px #f2f2f2;
+  font-family: "Philosopher";
+}
+
+section {
+  margin-top: 2rem;
+  -webkit-box-shadow: 0px 2px 4px 4px #f2f2f2;
+          box-shadow: 0px 2px 4px 4px #f2f2f2;
+  padding: 1rem;
+}
+
+h4 {
+  color: white;
+  background-color: #00aaaa;
+  padding: 0.25rem;
+  font-family: "Philosopher";
+}
+
+th {
+  color: #00aaaa;
+  padding-right: 1rem;
+  text-align: left;
+}
+
+#generalities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#generalities > div {
+  width: 33%;
+}
+
+#generalities #about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+#generalities #about img {
+  width: 60%;
+  height: auto;
+}
+
+#generalities #soft-skills {
+  padding-right: 2rem;
+}
+
+#generalities #languages th {
+  width: 33%;
+}
+
+#divide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#divide #left,
+#divide #right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#divide #left {
+  width: 66%;
+  padding-right: 2rem;
+}
+
+#web-dev table,
+#experience table,
+#education table {
+  width: 100%;
+}
+
+#web-dev th,
+#web-dev td,
+#experience th,
+#experience td,
+#education th,
+#education td {
+  display: inline-block;
+  width: 33%;
+  margin-top: 0.5rem;
+}
+
+#web-dev td:nth-child(4),
+#experience td:nth-child(4),
+#education td:nth-child(4) {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+thead {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
